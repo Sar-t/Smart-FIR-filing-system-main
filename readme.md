@@ -1,38 +1,40 @@
-# 🚓 Smart FIR Filing System
+🚓 Smart FIR Filing System
 
-An AI-powered web application designed to streamline the FIR filing process for police departments and citizens. It uses NLP and machine learning to analyze incident descriptions, extract key metadata, and auto-suggest appropriate legal sections under the Bharatiya Nyaya Sanhita (BNS).
+An AI-powered web application that streamlines the FIR filing process for citizens and police departments. The system leverages NLP and machine learning to analyze incident descriptions, extract key metadata, and automatically suggest relevant legal sections under the Bharatiya Nyaya Sanhita (BNS).
 
----
+✨ Features
 
-## ✨ Features
+🔍 AI-Suggested Legal Sections – Recommends applicable BNS sections based on the incident narrative.
 
-- 🔍 **AI-Suggested Legal Sections**  
-  Automatically suggests relevant sections and acts based on incident description.
+🧠 Intelligent Metadata Extraction – Uses NLP to identify dates, times, locations, and suspect details.
 
-- 🧠 **Metadata Extraction with NLP**  
-  Extracts time, date, location, and suspect details from the incident text using spaCy.
+⚖️ BNS Integration – Keeps legal references aligned with the updated Bharatiya Nyaya Sanhita.
 
-- ⚖️ **Bharatiya Nyaya Sanhita (BNS) Integration**  
-  Matches incidents with updated legal sections from the BNS.
+🧾 FIR Form Autofill – Populates Form IF1 (Section 154 Cr.P.C.) automatically from extracted data.
 
-- 🧾 **FIR Form Autofill (Form IF1 - Section 154 Cr.P.C)**  
-  Fills FIR fields using extracted data, aligned with legal FIR format.
+📊 Real-Time Section Preview – Displays matched laws with confidence scores and explanations.
 
-- 📊 **Live Section Preview with Confidence Score**  
-  Shows suggested laws in real time with AI explanation and confidence level.
+📄 PDF Export – Generates a structured FIR draft ready for submission and record keeping.
 
-- 📄 **PDF Generation**  
-  Converts completed FIR form into a downloadable PDF.
+🖥️ Tech Stack
+Layer	Technology
+Backend	Python, Flask
+Frontend	HTML, Bootstrap, JavaScript
+NLP/AI	spaCy, SentenceTransformers
+Database	SQLite (law_sections, fir_submissions)
 
----
+🚀 Future Improvements
 
-## 🖥️ Tech Stack
+🌐 Multi-Language Support – Enable FIR filing in regional Indian languages.
 
-| Component      | Technology                |
-|----------------|---------------------------|
-| Backend        | Python, Flask             |
-| Frontend       | HTML, Bootstrap, JS       |
-| NLP            | spaCy, SentenceTransformers |
-| Database       | SQLite (`law_sections`, `fir_submissions`) |
-| Deployment     | Flask Server              |
+📱 Mobile App Integration – Provide citizens with a mobile-friendly FIR submission system.
 
+☁️ Cloud Database & Scaling – Migrate to MySQL/PostgreSQL for handling large-scale police records.
+
+🔐 Authentication & Role-Based Access – Add secure login for citizens, police officers, and administrators.
+
+📡 API Integration with Police Portals – Directly connect with government systems for seamless FIR registration.
+
+🤖 Enhanced AI Models – Improve accuracy with transformer-based legal NLP models (e.g., BERT, LegalBERT).
+
+📊 Analytics Dashboard – Provide insights into crime trends, frequency, and geospatial patterns.
